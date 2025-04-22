@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Verificação de Aposentadoria</title>
+</head>
+<body>
+    <center>
+        <h1>Verificação de Aposentadoria</h1>
+
+        <script>
+            var idade = parseInt(prompt("Digite sua idade:"));
+            var sexo = prompt("Digite seu sexo (masculino ou feminino):").toLowerCase();
+
+            if ((sexo === "feminino" && idade >= 60) || (sexo === "masculino" && idade >= 65)) {
+                document.write("Você pode solicitar a aposentadoria por idade.");
+            } else {
+                document.write("Você ainda não pode solicitar a aposentadoria por idade.");
+            }
+        </script>
+    </center>
+</body>
+</html>
